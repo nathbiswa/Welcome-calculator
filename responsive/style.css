@@ -1,0 +1,33 @@
+@media (max-width:350px) {
+    .calculator {
+        width: 300px;
+    }
+
+    .btn {
+        width: 66px;
+
+    }
+
+    .last-line input {
+        width: 136px;
+        margin-top: 11px;
+    }
+
+}
+
+@media (max-width:300px) {
+    .calculator {
+        width: 282px;
+    }
+
+    .btn {
+        width: 61px;
+
+    }
+
+    .last-line input {
+        width: 127px;
+        margin-top: 4px;
+    }
+
+}

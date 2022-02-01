@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Welcome to our Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive/style.css">
+    
+  </head>
+  <body>
+    
+<div class="calculator">
+
+<form action="" id="form">
+<input type="text" value="" name="result" id="result" class="form-control" placeholder="0">
+
+<div class="input-wrap">
+
+<div class="number-line">
+    <input type="button" value="7" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="8" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="9" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="+" name="btn" class="btn btn-warning" onclick="calculate(this.value)">
+</div>
+<div class="number-line">
+    <input type="button" value="4" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="5" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="6" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="-" name="btn" class="btn btn-warning" onclick="calculate(this.value)">
+</div>
+<div class="number-line">
+    <input type="button" value="3" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="2" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="1" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="*" name="btn" class="btn btn-warning" onclick="calculate(this.value)">
+</div>
+
+<div class="number-line">
+    <input type="button" value="0" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="00" name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="." name="btn" class="btn btn-primary" onclick="calculate(this.value)">
+    <input type="button" value="/" name="btn" class="btn btn-warning" onclick="calculate(this.value)">
+</div>
+<div class="last-line">
+    
+    <input type="button" value="AC" name="btn" class="btn btn-warning" onclick="result.value=null">
+    <input type="button" value="=" name="btn" class="btn btn-warning" onclick="result.value=eval(result.value)">
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<script src="js/app.js"></script>
+
+  </body>
+</html>
+
+
